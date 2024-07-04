@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lyh.jul042.test.TestMapper">
+	<insert id="insertTestInfo" parameterType="com.lyh.jul042.test.Test">
+		insert into jul04_testDate values(#{t_subject}, #{t_when})
+	</insert>
+	
+	<select id="getTestInfo" resultType="com.lyh.jul042.test.Test">
+		select * from jul04_testDate order by t_when
+	</select>
+</mapper>
+

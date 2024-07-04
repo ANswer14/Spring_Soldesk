@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lyh.jul042.student.StudentMapper">
+
+	<insert id="regStudent" parameterType="com.lyh.jul042.student.Student">
+		insert into jul04_student values(
+			jul04_student_seq.nextval, #{s_name}, #{s_nickname})   <!-- ; 사용 X -> 구문 오류 남 -->
+	</insert>
+	
+	<select id="getAllStudent" resultType="com.lyh.jul042.student.Student">
+		select * from jul04_student order by s_no
+	</select>
+	
+	
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- insert의 id에 노란줄이 있으면 오류! 만약 코드에 문제가 없다면 한 자를 추가했다 지워서 다시 저장해 볼 것 -->
+<!-- SQL작성 -->
