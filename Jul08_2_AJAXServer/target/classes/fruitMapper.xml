@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lyh.jul082.fruit.FruitMapper">
+	<select id="getAllFruits" resultType="com.lyh.jul082.fruit.Fruit">
+	select * from jul08_fruit order by f_price
+	</select>
+
+
+	
+</mapper>
