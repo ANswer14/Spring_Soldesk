@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "haenam";
+	url: "haenam.ttf";
+}
+
+#registTbl {
+	margin-left: auto;
+	margin-right: auto;
+	border-spacing: 20px 20px;
+}
+
+#registTbl td{
+	font-size: 30pt;
+	
+}
+
+#pw {
+	font-size: 8pt;
+	
+}
+
+#id {
+	font-size: 20pt;
+}
+
+#name {
+	
+	font-size: 20pt;
+}
+
+
+
+
+#registTbl input{
+	border-radius: 10px;
+	width: 200px;
+	height: 30px;
+	border: transparent;
+	background-color: pink;
+	font-family: "haenam";
+}
+
+#photo {
+	font-size: 10pt;
+	
+}
+
+#registTbl select{
+	font-size: 20pt;
+	font-family: "haenam";
+	border: transparent;
+	height: 30px;
+	width: 80px;
+}
+
+#regBtn {
+	border: transparent;
+	font-size: 20pt;
+	color: teal;
+	background-color: #FFFFE0;
+	font-family: "haenam";
+	cursor: pointer;
+}

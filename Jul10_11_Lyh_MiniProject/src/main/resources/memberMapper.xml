@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lyh.jul103.member.MemberMapper">
+	<insert id="signUp" parameterType="com.lyh.jul103.member.Member">
+		insert into jul10_member values(#{m_id}, #{m_pw}, #{m_name}, to_date(#{m_birth}, 'YYYYMMDD'), #{m_photo})
+	</insert>
+	
+	<select id="login" resultType="com.lyh.jul103.member.Member" parameterType="com.lyh.jul103.member.Member">
+		select * from jul10_member where m_id = #{m_id}
+	</select>
+	
+	<select id="loginCheck" resultType="com.lyh.jul103.member.Member" parameterType="com.lyh.jul103.member.Member">
+		select * from jul10_member where m_id = #{m_id}
+	</select>
+	
+	<select id="getMemberInfo" resultType="com.lyh.jul103.member.Member" parameterType="com.lyh.jul103.member.Member">
+		select * from jul10_member where m_id = #{m_id}
+	</select>
+	
+	<insert id="update" parameterType="com.lyh.jul103.member.Member">
+		update jul10_member set m_pw = #{m_pw}, m_name = #{m_name}, m_photo = #{m_photo}
+	</insert>
+	
+	<delete id="delete" parameterType="com.lyh.jul103.member.Member" >
+		delete from jul10_member where m_id = #{m_id}
+	</delete>
+	
+	<select id="logout" parameterType="com.lyh.jul103.member.Member">
+		select * from jul10_member where m_id = #{m_id}
+	</select>
+</mapper>
